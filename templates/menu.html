@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+</br>
+</br>
+</br>
+{% set i = '' %}
+{% set r = '' %}
+
+
+{% for r in categories %}
+
+<div>
+<a href="{{url_for(('showMenuItems'),category_id=r.id)}}">
+{{r.name}}
+</a>
+<!-- It will show Edit and Delete Icons beside the name of categories that Logged in user has created!-->
+{% if login_session['user_id'] != r.user_id %}
+{% else %}
+<a href="{{url_for(('categoryEdit'),category_id=r.id)}}">&#9998;</a>
+<a href="{{url_for(('categoryDelete'),category_id=r.id)}}">&#10006;</a>
+</br></br>
+</div>
+{% endif %}
+
+{% endfor %}
+{% endblock %}
+
+{% block footer %}
+
+{% include "menuitems.html" %}
+
+{% endblock %}

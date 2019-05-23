@@ -1,0 +1,48 @@
+<html>
+<head>
+</head>
+<body>
+{% extends "base.html" %}
+
+{% block content %}
+
+</br></br>
+</br></br>
+<!-- If the logged in user is the one who created the viewed item
+Then show the Edit & Delete buttons 
+If not, show the item name & desc only
+Even if user accessed Edit/Delete menu using a direct link, It will show an error!-->
+
+{% if login_session['user_id'] != item.user_id %}
+
+<div>
+<b>{{item.name}}</b>
+</br>
+</br>
+
+<p style="font-size: 15px">{{item.description}} </p>
+
+</br>
+</div>
+{% else %}
+
+<div>
+
+<b>{{item.name}}</b>
+</br>
+</br>
+
+<p style="font-size: 15px">{{item.description}} </p>
+
+</br>
+<a href="{{url_for('EditMenuItem',item_id=item.id,category_id=category.id)}}">Edit</a> | 
+<a href="{{url_for('RemoveMenuItem',item_id=item.id,category_id=category.id)}}">Delete</a>
+
+</div>
+{% endif %}
+
+{% endblock %}
+
+</body>
+
+</html>

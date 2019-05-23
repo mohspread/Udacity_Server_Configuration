@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+{% extends "base.html" %}
+
+{% block content %}
+
+<h5>In this page you can modify item: {{menuitems.name}}?</h5>
+</br></br>
+
+
+
+<div>
+	<form action="{{url_for('EditMenuItem',item_id=menuitems.id,category_id=category.id)}}" method="POST">
+		Title:</br>
+	<input type="text" name="NewName"></br>
+		Description:</br>
+	<input type="text" name="Description"></br>
+	</br><input type="submit" value="Confirm"></br>
+</div>
+</form>
+<strong><a href= '{{url_for("categoryMenu")}}'>Cancel</a></strong>
+{% endblock %}
+
+</body>
+
+</html>
