@@ -5,14 +5,14 @@ The items catalog is the 2nd Project in Udacity's Fullstack Nanodegree.
 
 ### Features
 
-  - You can signup/signin and create your own favourite movies catalog. by creating categories and sub-items inside those categories. 
+  - You can signup/signin and create your own favourite movies catalog by creating categories and sub-items inside those categories. 
   - Only you has the access to modify your list or categories, so don't worry!
 
 ### Tools Needed:
 
 Items Catalog uses a number of tools to work properly:
 
-* [Python](http://breakdance.io)
+* [Python](https://www.python.org/downloads/windows/)
 * [Vagrant](https://www.vagrantup.com/)
 * [VirtualBox](https://www.virtualbox.org/)
 * [Git](https://git-scm.com/downloads)
