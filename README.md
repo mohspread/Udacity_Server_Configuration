@@ -7,6 +7,8 @@ The items catalog is the 2nd Project in Udacity's Fullstack Nanodegree.
 
   - You can signup/signin and create your own favourite movies catalog by creating categories and sub-items inside those categories. 
   - Only you has the access to modify your list or categories, so don't worry!
+  - You must login or signup to be able to create categories or items, Otherwise you can only view the existing items.
+  
 
 ### Tools Needed:
 
