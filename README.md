@@ -37,7 +37,7 @@ $ vagrant ssh
 ```
 Change directory to Vagrant folder
 ```sh
-cd /vagrant
+$ cd /vagrant
 ```
 Setup the database
 ```sh
