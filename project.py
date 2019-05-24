@@ -310,7 +310,8 @@ def categoryEdit(category_id):
                 return redirect('/categories/')
             else:
                 return "You are not the Owner of this Category!"
-
+        else:
+            return "Name field cannot be empty."
     else:
         return render_template("editcategory.html",
                                category=category, login_session=login_session)
@@ -426,6 +427,8 @@ def EditMenuItem(item_id, category_id):
                 return redirect('/categories/')
             else:
                 return "You are not the owner of this item."
+        else:
+            return "Name field cannot be empty."
     else:
         return render_template("editmenuitem.html",
                                menuitems=menuitems,
@@ -438,3 +441,4 @@ if __name__ == '__main__':
     app.debug = True
     app.secret_key = 'ieOiG6Gt5rwEL1bf49e9T9v1'
     app.run(host='0.0.0.0', port=5000)
+    
