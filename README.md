@@ -21,19 +21,19 @@ Items Catalog uses a number of tools to work properly:
 
 ### Installation
 
-Install all the above tools.
+1. Install all the above tools.
 
-Install all modules needed for the project using command line:
+2. Install all modules needed for the project using command line:
 
 ```sh
 pip  install  -r  requirements.txt
 ```
-Clone this repo by going to your desired location
+3. Clone this repo by going to your desired location
 * Right click anywhere and choose ```Git bash here ```, Then use the following console commands
 ```sh
 $ git clone https://github.com/mohspread/Udacity-Items-Catalog/ catalog
 ```
-Launch Vagrant with the following commands:
+4. Launch Vagrant with the following commands:
 ```sh
 $ vagrant up
 ```
@@ -41,23 +41,23 @@ Then,
 ```sh
 $ vagrant ssh
 ```
-Change directory to Vagrant folder
+5. Change directory to Vagrant folder
 ```sh
 $ cd /vagrant
 ```
-Setup the database
+6. Setup the database
 ```sh
 $ Python database_setup.py
 ```
-Populate the database with some data
+7. Populate the database with some data
 ```sh
 $ Python lotsofmenus.py
 ```
-Launch main project file:
+8. Launch main project file:
 ```sh
 $ Python project.py
 ```
-Open the browser and go to http://localhost:5000
+9. Open the browser and go to http://localhost:5000
 
 ### JSON  Endpoints
 
